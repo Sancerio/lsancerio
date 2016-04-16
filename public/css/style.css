@@ -1,8 +1,13 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
 }
 
-a {
-  color: #00B7FF;
+.fluid-container {
+   background-color:#ffe0b2;
+}
+
+blockquote {
+    border-left: solid #FF9800;
 }

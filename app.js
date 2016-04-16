@@ -1,13 +1,19 @@
 
 
-var express = require('express'),
-  config = require('./config/config');
+var express = require('express');
+var app = require('express')();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
+var port = process.env.PORT || 1337;
 
-var app = express();
 
-require('./config/express')(app, config);
+app.use(express.static(__dirname + '/public'));
 
-app.listen(config.port, function () {
-  console.log('Express server listening on port ' + config.port);
+app.get('/', function(req, res){
+	res.sendFile(__dirname + '/public/index.html');
+});
+
+http.listen(port, function(){
+	console.log('listening on *:'+port);
 });
 
