@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
 
-    <title>Monkey D. Luffy</title>
+    <title>Lsancerio</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
     
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
     <!--<link rel="stylesheet" href="css/style.css" type="text/css">-->
@@ -51,70 +51,68 @@
 
 
 <body>
-   <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Navigation</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Monkey D. Luffy</h1>
-            <h3>The Pirate King Wannabe</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+    <!-- Navigation bar -->\
+    <div class="container">
+      <nav class = "navbar navbar-fixed-top navbar-inverse">
+
+          <div class = "row">
+          <div class="col-sm-offset-1 col-md-8 col-md-offset-2 col-xs-offset-1">
+          <div class = "navbar-header">
+            <button type = "button" class = "navbar-toggle" 
+               data-toggle = "collapse" data-target = "#m-navbar-collapse">
+               <span class = "sr-only">Toggle navigation</span>
+               <span class = "icon-bar"></span>
+               <span class = "icon-bar"></span>
+               <span class = "icon-bar"></span>
+            </button>
+          
+            <a class = "navbar-brand" href = "#top">L</a>
+          </div>
+
+          <div class = "collapse navbar-collapse" id="m-navbar-collapse">
+            <ul class = "nav navbar-nav">
+              <li class="active">
+                  <a href="#top">Home</a>
+              </li>
+              <li>
+                  <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="http://bit.ly/1qYCCEW">Resume</a>
+              </li>
+
+            </ul>
+          </div>
+          </div>
+          </div>
+
+      </nav>
+    </div>
+
+    <div class="jumbotron header">
+      <div class="container hero-content row">
+        <div class="col-sm-offset-1 col-md-8 col-md-offset-2 col-xs-offset-1">
+        <h1>Limiardi Eka Sancerio</h1>
+        <h3>A final year student pursuing Bachelor degree in Electrical Engineering. Specialize in Machine Learning, Computer Vision, Software Development, and Embedded System.</h3>
         </div>
-    </header>
-
-
-      <div id="about" class=" about row">
+      </div>
+      <div class="row">
+      <div class="col-md-3 pull-right">
+      <p><a class="btn-dark btn-primary btn-lg about-button" href="#about" role="button">About me</a></p>
+      </div>
+      </div>
+    </div>
+      <!-- About Luffy -->
+    <div id="about" class="container-fluid">
+      <div class="about row">
         
         <!-- Luffy's image -->
         <div class="col-sm-offset-1 col-md-8 col-md-offset-2 col-xs-offset-1">
-          <img class="img-responsive center-block" src="http://img05.deviantart.net/974a/i/2015/010/8/2/monkey_d_luffy_render_9_by_roronoaroel_d5l75aj_by_trishas1law-d8dfyay.png">
-          <div class="text-center">Luffy after two years of training</div>
-          </img>
+          <img class="img-responsive center-block" src="img/luffy.png"></img>
         </div>
-
-      <!-- About Luffy -->
-
-      <div class="col-sm-offset-1 col-md-6 col-md-offset-3 col-xs-offset-1">
-        <h3>Here's a timeline of Luffy's journey:</h3>
-        <ul>
-          <li>Born on 5th May in Foosha Village in East Blue</li>
-          <li>Met Red Haired Shanks</li>
-          <li>Met Portgas D. Ace and Sabo</li>
-          <li>Started his pirate journey from East Blue</li>
-          <li>Met his first crewmate: Roronoa Zoro</li>
-        </ul>
-        <!--<blockquote><p>"Master Rayleigh, I was really surprised!! Over in the East Blue...! There was a kid who said the same things as Captain Roger...! Those exact same words as the captain!"</p><footer><cite>Shanks to Silver Rayleighs, talking about Luffy</footer></cite></blockquote>-->
-        <h3>Take a look at this awesome rubber man in <a href="http://onepiece.wikia.com/wiki/Monkey_D._Luffy" target="_blank">One-Piece Wikia</a></h3>
-
       </div>
-      </div>
-   <script type="text/javascript">
-      // Closes the sidebar menu
-      $("#menu-close").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
+    </div>
 
-      // Opens the sidebar menu
-      $("#menu-toggle").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
-    </script>
+    
 </body>
 </html>
