@@ -1,22 +1,23 @@
-/* Global Styles */
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
 
 html,
 body {
     height: 100%;
 }
 
-body {
-    font-family: "Helvetica Neue","Source Sans Pro",Helvetica,Arial,sans-serif;
-}
-
-/*preloader animation*/
 #preloader {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fff;
+    background: white;
     z-index: 9999999;
     height: 100%;
     width: 100%;
@@ -44,7 +45,7 @@ body {
   .sk-three-bounce .sk-child {
     width: 20px;
     height: 20px;
-    background-color: #000;
+    background-color: teal;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
@@ -71,126 +72,39 @@ body {
             transform: scale(1); } }
 /*end of preloader animation*/
 
-.text-vertical-center {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
+nav ul a,
+nav .brand-logo {
+  color: #444;
 }
 
-.text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
+p {
+  line-height: 2rem;
 }
 
-/* Custom Button Styles */
-
-.btn-dark {
-    border-radius: 0;
-    color: #fff;
-    background-color: #000;
-    opacity: 0.8;
+.button-collapse {
+  color: #26a69a;
 }
 
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: #fff;
-    background-color: #000;
-    opacity: 1.0;
+.parallax-container {
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
 }
-
-.btn-light {
-    border-radius: 0;
-    color: #333;
-    background-color: #607D8B
-}
-
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-    color: #333;
-    background-color: #607D8B;
-    opacity: 0.8;
-}
-
-/* Custom Horizontal Rule */
-
-hr.small {
-    max-width: 100px;
-}
-
-/*Navigation bar*/
-
-.hero-content {
+  .parallax-container .section,
+  .parallax-container .section .container {
     width: 100%;
-    /*padding-right: 500px;*/
+    height: 100%;
+  }
+
+.icon-block {
+  padding: 0 15px;
 }
-
-.header-nav {
-    background: #000;
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+.icon-block .material-icons {
+  font-size: inherit;
 }
-
-.header-nav li {
-    float: right;
+.card-content ul li {
+  list-style-type: square;
 }
-
-.header-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+footer.page-footer {
+  margin: 0;
 }
-
-.header-nav li:hover {
-    background-color: #727272;
-}
-/* Header */
-
-.header {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 70%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
-    /*background: #9e9e9e no-repeat center center scroll;
-    background-color: rgba(0,0,0,0.1);*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.header h1 {
-    color: #fff;
-    padding: 20px 0;
-}
-
-
-.header h3 {
-    color: #b6b6b6;
-    padding: 20px 0;
-}
-
-/*About button in header*/
-
-.about-button {
-    /*position: absolute;
-    bottom:-20px;
-    right: 100px;*/
-    width: 100%;
-}
-/* About */
-
-.about {
-    padding: 50px 0;
-    background-color:#ffffff;
-}
-
