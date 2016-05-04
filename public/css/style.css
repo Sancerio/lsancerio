@@ -1,10 +1,4 @@
 /* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
 
 html,
 body {
@@ -45,7 +39,7 @@ body {
   .sk-three-bounce .sk-child {
     width: 20px;
     height: 20px;
-    background-color: teal;
+    background-color: indigo;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
