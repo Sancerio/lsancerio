@@ -39,7 +39,7 @@ body {
   .sk-three-bounce .sk-child {
     width: 20px;
     height: 20px;
-    background-color: indigo;
+    background-color: #3f51b5;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
@@ -101,3 +101,15 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label {
+     color: #3f51b5;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus {
+     border-bottom: 1px solid #3f51b5;
+     box-shadow: 0 1px 0 0 indigo;
+#3f51b5
