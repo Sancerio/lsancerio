@@ -76,7 +76,7 @@ p {
 }
 
 .button-collapse {
-  color: #fff;
+  color: #fffcd ;
 }
 
 .parallax-container {
@@ -98,9 +98,6 @@ p {
 .card-content ul li {
   list-style-type: square;
 }
-footer.page-footer {
-  margin: 0;
-}
 
 /* label focus color */
 .input-field input[type=text]:focus + label,
@@ -111,5 +108,5 @@ footer.page-footer {
 .input-field input[type=text]:focus,
 .input-field input[type=email]:focus {
      border-bottom: 1px solid #3f51b5;
-     box-shadow: 0 1px 0 0 indigo;
-#3f51b5
+     box-shadow: 0 1px 0 0 #3f51b5;
+}
